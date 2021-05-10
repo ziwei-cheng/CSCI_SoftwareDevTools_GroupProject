@@ -1,0 +1,66 @@
+html, body{
+    background-image: url('../assets/demo.svg');
+    background-size: 100vw 100vh;
+    overflow: hidden;
+    overscroll-behavior: none;
+    width: 100vw;
+    height: 100vh;
+}
+#initialScreen{
+    text-align: center;
+    display: none;
+}
+#gameScreen{
+  text-align: center;
+  display: none;
+}
+#gcanvas{
+  border: 5px solid gray;
+}
+
+#newGameButton,
+#joinGroup,
+#logoutButton{
+  font-size: 1.8em;
+  width: 15em;
+  align-self: center;
+  margin-top: 1.3em;
+  text-align: right;
+  transition: all .2s ease-in-out;
+}
+
+#newGameButton,
+#logoutButton{
+  background-color: #03254ce9;
+  border-radius: 0.3em;
+  border: 0;
+  color: white;
+  padding: .3em 1em .3em 0;
+  cursor: pointer;
+}
+
+#joinGameButton{
+  width: 7em;
+  align-self: center;
+  background-color: #03254ce9;
+  border-radius: 0.3em;
+  border: 0;
+  text-align: right;
+  padding: .3em 1em .3em 0;
+  color: white;
+  cursor: pointer;
+}
+#roomCodeInput{
+  padding: .3em 0 .3em .3em;
+  width: 8em;
+  align-self: center;
+  background-color: #d0efff54;
+  border-radius: 0.3em;
+  border: 0;
+}
+
+#newGameButton:hover,
+#joinGroup:hover,
+#logoutButton:hover{
+  transform: scale(1.1);
+}

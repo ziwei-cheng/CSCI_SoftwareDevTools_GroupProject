@@ -1,0 +1,32 @@
+html, body{
+    background-image: url('../assets/demo.svg');
+    background-size: 100vw 100vh;
+    overflow: hidden;
+    overscroll-behavior: none;
+    width: 100vw;
+    height: 100vh;
+}
+.loginBox{
+  border: 0;
+  background-color: #d0efff54;
+  box-shadow: 0px 0px 10px 10px rgb(189, 189, 189);
+  padding: 1em;
+}
+.inputBox{
+  border: 0;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: #d0efff;
+}
+#loginButton{
+  background-color: #03254ce9;
+  color: white;
+}
+#registerLink{
+  color: #002d40;
+}
+#registerLink:hover{
+  color: #f56a79;
+}

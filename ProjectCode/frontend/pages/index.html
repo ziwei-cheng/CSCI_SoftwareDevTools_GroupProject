@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Demo</title>
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Our own CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./leaderboard.html">Leader Board</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./gamerules.html">Game Rules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./aboutus.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+<!-- menu display-->
+<div id="initialScreen">
+  <div class="d-flex justify-content-around">
+    <div class="text-left">
+      <h1 class="display-2" style="margin-top: 100px;">WELCOME 
+        <br>
+        <span class="display-3" id="usernameDisplay"></span>
+      </h1>
+      <br>
+      <br>
+    </div>
+    <div class="d-flex flex-column">
+      <h1 style="margin-top: 1em;">Main Menu</h1>
+      <button type="submit" id="newGameButton">
+          NEW GAME
+      </button>
+      <div class="d-flex" id="joinGroup">
+        <input type="text" placeholder="enter room code" id="roomCodeInput">
+        <button type="submit" id="joinGameButton">
+            JOIN GAME
+        </button>
+      </div>
+      <button id="logoutButton">LOG OUT</button>
+    </div>
+  </div>
+
+  
+</div>
+
+<div id="gameScreen">
+  <div class="d-flex flex-row justify-content-around">
+    <h6>Room code: 
+      <span id="roomCodeDisplay"></span>
+    </h6>
+    <h6>Number of Players: 
+      <span id="numPlayerDisplay"></span>
+    </h6>
+    <h6>Accuracy: 
+      <span id="accuracyDisplay"></span>%
+    </h6>
+    <h6>Eliminations: 
+      <span id="elimiationDisplay"></span>
+    </h6>
+  </div>
+  <canvas id="gcanvas"></canvas>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src="../js/index.js"></script>
+
+</body>
+</html>
